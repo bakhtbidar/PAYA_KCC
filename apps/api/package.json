@@ -13,6 +13,7 @@
     "prisma:studio": "prisma studio",
     "prisma:generate:production": "prisma generate --schema=prisma-production/schema.prisma",
     "prisma:deploy:production": "prisma migrate deploy --schema=prisma-production/schema.prisma",
+    "prisma:unstick:production": "prisma migrate resolve --rolled-back 20260914150000_init --schema=prisma-production/schema.prisma",
     "prisma:seed:production": "ts-node prisma/seed.ts"
   },
   "dependencies": {
