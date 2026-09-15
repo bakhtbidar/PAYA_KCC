@@ -1,0 +1,87 @@
+# Render Blueprint — deploys PAYA Control in one pass: "New +" → "Blueprint" → point
+# at this repo. See DEPLOYMENT.md for the full walkthrough, including the manual
+# steps Render can't do for you (Cloudflare R2 bucket, DNS records at your registrar).
+#
+# Free-tier notes (see DEPLOYMENT.md for the paid alternative):
+#  - The API web service spins down after 15 min idle; the first request after
+#    that takes ~30-50s to wake it back up.
+#  - The free Postgres database is deleted 30 days after creation unless upgraded
+#    to a paid plan first. Reference data (roles, checklists) reseeds itself
+#    automatically on next boot against a fresh database — real restaurant/
+#    equipment/maintenance data does not, so back that up (or upgrade) before day 30.
+
+databases:
+  - name: paya-control-db
+    plan: free
+    databaseName: paya_control
+    user: paya
+
+services:
+  - type: web
+    name: paya-control-api
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm install && npm run prisma:generate:production --workspace=apps/api && npm run build --workspace=apps/api
+    # prisma:deploy applies the Postgres migration; prisma:seed (re)creates roles, equipment
+    # categories/types, the 20 PM checklist templates, and the one bootstrap admin account —
+    # every write in it is an upsert, so running it on every boot is safe and self-healing.
+    startCommand: npm run prisma:deploy:production --workspace=apps/api && npm run prisma:seed:production --workspace=apps/api && node apps/api/dist/main.js
+    healthCheckPath: /api/auth/refresh
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: paya-control-db
+          property: connectionString
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: JWT_ACCESS_TTL
+        value: 15m
+      - key: JWT_REFRESH_TTL_DAYS
+        value: "7"
+      # Update these two once you know your actual Render static-site URL or custom domain —
+      # see DEPLOYMENT.md step "Point the two apps at each other".
+      - key: WEB_ORIGIN
+        value: https://app.payaops.com
+      - key: PUBLIC_APP_URL
+        value: https://app.payaops.com
+      - key: STORAGE_PROVIDER
+        value: s3
+      # Fill these four from your Cloudflare R2 bucket's "Manage API tokens" page —
+      # not stored in this file, entered once in the Render dashboard after first deploy.
+      - key: S3_ENDPOINT
+        sync: false
+      - key: S3_BUCKET
+        sync: false
+      - key: S3_ACCESS_KEY_ID
+        sync: false
+      - key: S3_SECRET_ACCESS_KEY
+        sync: false
+      - key: S3_REGION
+        value: auto
+      # The real first admin login — set both in the Render dashboard before the first
+      # deploy finishes; the API refuses to boot in production without a password set here.
+      - key: SEED_ADMIN_EMAIL
+        sync: false
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+
+  - type: web
+    name: paya-control-web
+    runtime: static
+    branch: main
+    buildCommand: npm install && npm run build --workspace=apps/web
+    staticPublishPath: apps/web/dist
+    envVars:
+      # Update this once the API service has a URL — see DEPLOYMENT.md.
+      - key: VITE_API_URL
+        value: https://api.payaops.com/api
+    routes:
+      # React Router client-side routes (e.g. /equipment/xyz) must all resolve to index.html.
+      - type: rewrite
+        source: /*
+        destination: /index.html

@@ -1,0 +1,3242 @@
+[
+  {
+    "sourceFile": "PAYA_Monthly_01_Refrigerator_and_Freezer.docx",
+    "code": "PAYA_MONTHLY_01",
+    "name": "Monthly Refrigerator and Freezer Maintenance Form",
+    "equipmentTypeName": "Refrigerator and Freezer",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Refrigerator and Freezer monthly tasks",
+        "tasks": [
+          {
+            "description": "Compare cabinet display with calibrated probe reading; record ambient and internal temperature",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect door gasket, hinges, closer, latch and heater where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check condenser cleanliness and unrestricted inlet and discharge airflow",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect evaporator airflow and frost or ice pattern without damaging fins",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check fans for correct operation, noise and rubbing",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect condensate pan and drain for blockage, standing water or leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Look for oil staining, pipe rubbing, damaged insulation and corrosion",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check internal light, alarm and defrost indication where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm setpoint has not been changed without customer approval",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_02_Walk_In_Cold_Room.docx",
+    "code": "PAYA_MONTHLY_02",
+    "name": "Monthly Walk In Cold Room Maintenance Form",
+    "equipmentTypeName": "Walk In Cold Room",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Walk In Cold Room monthly tasks",
+        "tasks": [
+          {
+            "description": "Record room temperature at representative points and compare with controller",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect door seal, closer, latch, safety release, threshold and strip curtain",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check evaporator fans, guards, icing, drain and airflow clearance",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect condenser unit condition, coil cleanliness and ventilation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check panel joints, floor, ceiling and penetrations for damage or condensation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Test alarm, light, emergency release and door switch where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check product stacking does not obstruct airflow or evaporator",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review defrost behaviour and evidence of repeated ice buildup",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record refrigerant data and specialist service due date from records",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_03_Blast_Chiller_and_Freezer.docx",
+    "code": "PAYA_MONTHLY_03",
+    "name": "Monthly Blast Chiller and Freezer Maintenance Form",
+    "equipmentTypeName": "Blast Chiller and Freezer",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Blast Chiller and Freezer monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect chamber, rack guides, probe, drain and door seal",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Compare display and calibrated probe temperatures",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run an available test or review recent cycle record for pull down performance",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check evaporator and condenser airflow, coil condition and frost",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect fans, door switch and cycle alarms",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check probe cable and connector for damage and cleanability",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm condensate drains freely without leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review cleaning routine and cycle data retention",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Escalate failure to meet the site HACCP cooling process",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_04_Ice_Machine.docx",
+    "code": "PAYA_MONTHLY_04",
+    "name": "Monthly Ice Machine and Storage Bin Maintenance Form",
+    "equipmentTypeName": "Ice Machine and Storage Bin",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Ice Machine and Storage Bin monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect accessible food zone and bin for scale, slime, mould or debris",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check scoop condition and storage outside the ice",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect inlet, filter, pump, hoses, float and drain for leakage or restriction",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check air filter, condenser and ventilation clearances",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Observe freeze and harvest cycle where practical",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check ice thickness or bridge control and bin level switch where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect door or lid, gasket and insulation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review cleaning and sanitising date against manufacturer instructions",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record water filter type, installation date and replacement due date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_05_Deep_Fryer.docx",
+    "code": "PAYA_MONTHLY_05",
+    "name": "Monthly Commercial Deep Fryer Maintenance Form",
+    "equipmentTypeName": "Commercial Deep Fryer",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Commercial Deep Fryer monthly tasks",
+        "tasks": [
+          {
+            "description": "Allow safe cool down before internal inspection or drain work",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect oil tank, drain valve, filtration system, baskets and supports for leakage or damage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check heating or ignition, flame stability and recovery behaviour",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Compare thermostat indication with suitable temperature instrument",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check high limit status and reset indication without bypassing the device",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect contactors, heating elements or burner area only within authorisation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check oil pump and filter hoses where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect castors, restraint, levelling and clearance under extraction",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record oil leakage, carbon buildup and condition affecting cleanability",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_06_Oven_and_Combi_Oven.docx",
+    "code": "PAYA_MONTHLY_06",
+    "name": "Monthly Oven and Combi Oven Maintenance Form",
+    "equipmentTypeName": "Oven and Combi Oven",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Oven and Combi Oven monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect chamber, racks, guides, door glass, hinges and gasket",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check heating, steam generation, fan and displayed temperature",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Compare displayed temperature with suitable test instrument when planned",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect drain, condensate, water supply and steam leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check cleaning system, detergent and rinse chemical connection where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect core probe, cable and connector",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check door switch, controls, alarms and accessible safety functions",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect air inlet, exhaust and required ventilation clearances",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review descaling, cleaning and manufacturer service due dates",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_07_Range_Grill_Griddle_and_Salamander.docx",
+    "code": "PAYA_MONTHLY_07",
+    "name": "Monthly Range Grill Griddle and Salamander Maintenance Form",
+    "equipmentTypeName": "Range Grill Griddle and Salamander",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Range Grill Griddle and Salamander monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect cooking surface, grates, burners, reflectors, grease tray and splash guards",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check ignition, flame stability, heating elements and temperature control",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm knobs, handles, pilots and indicators are secure and legible",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check grease drains and trays for blockage or leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect gas hose and restraint or electrical cable and isolator",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check overheating of adjacent walls, wiring or equipment",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect adjustable height mechanism or moving parts where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm appliance is stable, level and correctly positioned under extraction",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check shutdown and flame supervision where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_08_Hot_Holding_Equipment.docx",
+    "code": "PAYA_MONTHLY_08",
+    "name": "Monthly Hot Holding Equipment Maintenance Form",
+    "equipmentTypeName": "Hot Holding Equipment",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Hot Holding Equipment monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect cabinet, bain marie, heat lamp or heated shelf for damage and cleanability",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check doors, covers, hinges, handles, seals and water pan",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run heating cycle and check controls and indicators",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Compare displayed temperature with suitable instrument",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check fans and air circulation where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect water level control and drain where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check lamps, guards and heat-resistant fittings",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect cable, plug, isolator, feet or castors",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm unit can maintain the site-approved holding setpoint",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_09_Dishwasher_and_Glasswasher.docx",
+    "code": "PAYA_MONTHLY_09",
+    "name": "Monthly Dishwasher and Glasswasher Maintenance Form",
+    "equipmentTypeName": "Dishwasher and Glasswasher",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Dishwasher and Glasswasher monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect strainers, wash arms, jets, curtains, racks, tank and overflow",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run a complete fill, heat, wash, rinse and drain cycle",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record displayed wash and final rinse temperature or sanitiser concentration",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect chemical containers, tubes and dosing without mixing incompatible products",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check door or hood, seals, counterbalance and safety switch",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check supply hose, backflow protection, drain and leaks behind the machine",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Assess scale buildup and softener or filter service status",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect heater, pump and wash pressure through normal operation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review reported breaker trips, especially when other high-load equipment operates",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_10_Mixer_and_Dough_Equipment.docx",
+    "code": "PAYA_MONTHLY_10",
+    "name": "Monthly Mixer and Dough Equipment Maintenance Form",
+    "equipmentTypeName": "Mixer and Dough Equipment",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Mixer and Dough Equipment monthly tasks",
+        "tasks": [
+          {
+            "description": "Isolate before inspecting bowl, attachment, beater, hook or roller",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect bowl locks, attachments, drive hub and guards",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test start, stop, speed selection and emergency stop",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Verify bowl or guard interlocks operate and are not defeated",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check belt, transmission or lubrication only where manufacturer permits technician access",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check noise, vibration, movement and overheating during run test",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect timer and controls",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check feet, bench fixing or castors and restraint",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm all food-contact parts are intact and cleanable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_11_Slicer_Mincer_and_Food_Processor.docx",
+    "code": "PAYA_MONTHLY_11",
+    "name": "Monthly Slicer Mincer and Food Processor Maintenance Form",
+    "equipmentTypeName": "Slicer Mincer and Food Processor",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Slicer Mincer and Food Processor monthly tasks",
+        "tasks": [
+          {
+            "description": "Isolate before handling blade, plate, knife or attachment",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect blade, sharpening device, carriage, pusher and thickness control where applicable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect mincer plate, knife, worm, feed tray and pusher where applicable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect processor bowl, lid, blade and locking system where applicable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Test guards, covers, interlocks, stop and emergency stop",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check plug, cable, body, feet and bench stability",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run test for correct direction, speed, noise and vibration",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm controls return to safe position and no unintended restart occurs",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record damaged food-contact parts and remove unsafe sharp components from service",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_12_Vacuum_Packer.docx",
+    "code": "PAYA_MONTHLY_12",
+    "name": "Monthly Vacuum Packing Machine Maintenance Form",
+    "equipmentTypeName": "Vacuum Packing Machine",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Vacuum Packing Machine monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect chamber, lid, hinges, springs and lid gasket",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect seal bar, Teflon cover, sealing wire and counter bar",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check vacuum pump sound, oil level or service indication where applicable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run a test cycle and record vacuum and seal result",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check controls, programs, stop function and lid safety",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect chamber drain or moisture contamination",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check plug, cable, feet and ventilation clearance",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review pump oil and filter service date according to manufacturer",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm packaged product process remains within the site HACCP plan",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_13_Coffee_Machine_and_Grinder.docx",
+    "code": "PAYA_MONTHLY_13",
+    "name": "Monthly Coffee Machine and Grinder Maintenance Form",
+    "equipmentTypeName": "Coffee Machine and Grinder",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Coffee Machine and Grinder monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect machine, group heads, portafilters, steam wands and hot-water outlet",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check water, steam and drain connections for leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check pressure and temperature indications and brewing operation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review backflush and cleaning record and approved chemical",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect grinder hopper, burr condition indicator, dosing and adjustment",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run grinder and check abnormal noise, overheating and consistency",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check water filter or softener capacity and due date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect cable, plug, isolator and dry condition around equipment",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check scale signs and manufacturer service due date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_14_Beverage_Dispenser_and_Water_Treatment.docx",
+    "code": "PAYA_MONTHLY_14",
+    "name": "Monthly Beverage Dispenser and Water Treatment Maintenance Form",
+    "equipmentTypeName": "Beverage Dispenser and Water Treatment",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Beverage Dispenser and Water Treatment monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect dispenser nozzles, drip trays, product lines and drains",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run each available dispense function and observe flow and temperature",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check pumps, chillers and carbonator for noise, leakage and ventilation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect water filter, softener, UV or treatment equipment and due dates",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check hoses, fittings and backflow protection",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm CO2 cylinder is upright and secured",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect regulator, gauge and gas hose for visible damage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check ice interface or cold plate where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record sanitation schedule for beverage-contact lines",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_15_Kitchen_Extraction_System.docx",
+    "code": "PAYA_MONTHLY_15",
+    "name": "Monthly Kitchen Hood and Extraction System Maintenance Form",
+    "equipmentTypeName": "Kitchen Hood and Extraction System",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Hood and Extraction System monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect grease filters for loading, damage and correct seating",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect hood, plenum and accessible duct surfaces for grease, corrosion and loose panels",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Start fan and check capture at representative cooking load",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check motor and fan for abnormal noise, vibration, smell or overheating",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect belt and guard only where safely accessible and authorised",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check hood lights, switches and accessible wiring condition",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Observe make-up air and signs of excessive negative pressure",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check remote fan and roof access status and specialist cleaning due date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm fire-suppression nozzles are unobstructed without altering the system",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_16_Kitchen_HVAC.docx",
+    "code": "PAYA_MONTHLY_16",
+    "name": "Monthly Kitchen HVAC Equipment Maintenance Form",
+    "equipmentTypeName": "Kitchen HVAC Equipment",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen HVAC Equipment monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect return and supply filters and record condition",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check accessible coils, fan, louvers and airflow path",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run cooling or heating and record supply and return air temperatures",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check fan noise, vibration and speed operation",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect condensate pan, pump and drain for blockage or leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect insulation, pipework and visible oil staining",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check controller, thermostat, alarms and setpoint",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect outdoor unit airflow and coil when safely accessible",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record refrigerant specialist service or leak-check due date where applicable",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_17_Electrical_Distribution.docx",
+    "code": "PAYA_MONTHLY_17",
+    "name": "Monthly Kitchen Electrical Distribution Maintenance Form",
+    "equipmentTypeName": "Kitchen Electrical Distribution",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Electrical Distribution monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect panel exterior, door, covers, labels and access clearance",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check visible signs of moisture, grease, heat, smell or discolouration",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review reported breaker or RCD trips and identify affected appliance combination",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm high-load appliance circuits are identifiable from available labels",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect accessible sockets, plugs, isolators and cable routing",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check no protective device or interlock has been bypassed",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record supply type and available circuit ratings without opening live equipment",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Assign enclosure opening, tightening, earth, insulation and RCD testing to authorised person",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Treat water close to electrical equipment as urgent",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_18_Gas_System.docx",
+    "code": "PAYA_MONTHLY_18",
+    "name": "Monthly Kitchen Gas System and Interlocks Maintenance Form",
+    "equipmentTypeName": "Kitchen Gas System and Interlocks",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Gas System and Interlocks monthly tasks",
+        "tasks": [
+          {
+            "description": "Identify fuel type, meter, main isolation and appliance valves",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect accessible hoses, connectors, restraints and valves for visible damage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check gas detection panel indication where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check extraction and gas interlock through authorised functional method",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check ignition, flame stability and flame supervision on connected appliances",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect emergency shutoff accessibility and label",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check no valve, detector or interlock has been bypassed",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review gas tightness and combustion certification due dates",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Stop and escalate immediately for gas smell, unstable flame or damaged connection",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_19_Plumbing_Drainage_and_Hot_Water.docx",
+    "code": "PAYA_MONTHLY_19",
+    "name": "Monthly Kitchen Plumbing Drainage and Hot Water Maintenance Form",
+    "equipmentTypeName": "Kitchen Plumbing Drainage and Hot Water",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Plumbing Drainage and Hot Water monthly tasks",
+        "tasks": [
+          {
+            "description": "Inspect sinks, taps, pre-rinse spray, supply hoses, traps and joints",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Run outlets and observe pressure, drain speed, leakage and pooling",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check floor drains, covers and persistent odour or backup",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect dishwasher, ice machine and refrigeration drain routes",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record representative hot-water temperature and heater indication",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect heater, expansion discharge and visible connections for leakage",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check pumps and condensate lifting equipment where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review grease separator condition, access and specialist service due date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Escalate sewage backflow or uncontrolled leak immediately",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sourceFile": "PAYA_Monthly_20_Fire_Safety_Equipment.docx",
+    "code": "PAYA_MONTHLY_20",
+    "name": "Monthly Kitchen Fire Safety Equipment Maintenance Form",
+    "equipmentTypeName": "Kitchen Fire Safety Equipment",
+    "sections": [
+      {
+        "name": "Visit preparation and common safety checks",
+        "tasks": [
+          {
+            "description": "Confirm asset ID or QR, location, make, model and serial number",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Ask operator about faults, alarms, trips, leaks or performance changes since last visit",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm safe isolation and required shutdown before opening or cleaning service areas",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect plug, cable, isolator, guards, covers, feet, castors and accessible connections",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check for unusual noise, vibration, odour, overheating, corrosion, leakage or loose parts",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Function test through a representative operating cycle without bypassing safety devices",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record required measurements with instrument ID and before and after values",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Photograph exceptions and completed work; create a finding for every exception",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Return equipment to a known safe operating condition and confirm with site representative",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Fire Safety Equipment monthly tasks",
+        "tasks": [
+          {
+            "description": "Confirm extinguishers are accessible and correct locations remain unobstructed",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Visually check seal, hose, pressure indication and service date",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Inspect hood suppression nozzles for obstruction without moving or testing them",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check manual pull station access and suppression service tag",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check emergency lighting and exit sign condition where authorised",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Check detector or gas alarm panel shows normal status where fitted",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Confirm combustible storage does not obstruct hot equipment or exits",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Review specialist fire-system service and duct-cleaning due dates",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          },
+          {
+            "description": "Record visible condition only; statutory certification remains with authorised provider",
+            "expectedResultType": "CHOICE",
+            "unit": null,
+            "minValue": null,
+            "maxValue": null,
+            "isMandatory": true
+          }
+        ]
+      }
+    ]
+  }
+]

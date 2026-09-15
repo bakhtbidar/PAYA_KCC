@@ -1,0 +1,363 @@
+// PAYA Control — core schema, Milestone 1 (Identity, Customers/Restaurants, Equipment, Documents, Audit).
+//
+// Local dev runs on SQLite (zero install, works anywhere). Staging/production target PostgreSQL —
+// switch `provider` below to "postgresql" and point DATABASE_URL at a real instance, then apply
+// infra/sql/001_row_level_security.sql for tenant-isolation defense-in-depth (see README).
+//
+// Status/role/type fields are plain strings validated in the API layer (see src/common/enums.ts)
+// rather than native Prisma enums — SQLite has no enum type, and this keeps dev/prod schema identical.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- Identity & access ----------
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  fullName     String
+  phone        String?
+  locale       String   @default("es")
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  roles             UserRole[]
+  restaurantAccess  RestaurantUserAccess[]
+  uploadedDocuments Document[]
+  refreshTokens     RefreshToken[]
+  registeredEquipment Equipment[] @relation("EquipmentRegisteredBy")
+  performedWorkOrders WorkOrder[] @relation("WorkOrderPerformedBy")
+  assignedWorkOrders WorkOrder[] @relation("WorkOrderAssignedBy")
+  reportedNonConformities NonConformity[] @relation("NonConformityReportedBy")
+}
+
+model Role {
+  id          String  @id @default(cuid())
+  code        String  @unique // ADMIN | PROJECT_ENGINEER | TECHNICIAN | CUSTOMER | AUTHORITY
+  name        String
+  description String?
+
+  users UserRole[]
+}
+
+model UserRole {
+  userId String
+  roleId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, roleId])
+}
+
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------- Customers, restaurants, sections ----------
+
+model Customer {
+  id             String   @id @default(cuid())
+  name           String
+  taxId          String?
+  billingEmail   String?
+  billingAddress String?
+  phone          String?
+  notes          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  restaurants Restaurant[]
+}
+
+model Restaurant {
+  id          String   @id @default(cuid())
+  customerId  String
+  name        String
+  code        String?
+  addressLine String?
+  city        String?
+  postalCode  String?
+  country     String   @default("ES")
+  timezone    String   @default("Europe/Madrid")
+  isActive    Boolean  @default(true)
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  customer   Customer               @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  sections   RestaurantSection[]
+  equipment  Equipment[]
+  userAccess RestaurantUserAccess[]
+  documents  Document[]
+  workOrders WorkOrder[]
+  nonConformities NonConformity[]
+}
+
+model RestaurantSection {
+  id           String  @id @default(cuid())
+  restaurantId String
+  name         String
+  description  String?
+  sortOrder    Int     @default(0)
+
+  restaurant Restaurant  @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  equipment  Equipment[]
+}
+
+model RestaurantUserAccess {
+  id           String   @id @default(cuid())
+  restaurantId String
+  userId       String
+  roleAtSite   String // OWNER | MANAGER | TECHNICIAN | AUTHORITY | VIEW_ONLY
+  isPrimary    Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  restaurant Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([restaurantId, userId, roleAtSite])
+}
+
+// ---------- Equipment & categories ----------
+
+model EquipmentCategory {
+  id          String  @id @default(cuid())
+  code        String  @unique // REFRIGERATION | COOKING | EXTRACTION | HVAC | ELECTRICAL | PLUMBING | FIRE
+  name        String
+  description String?
+
+  models    EquipmentModel[]
+  types     EquipmentType[]
+  equipment Equipment[]
+}
+
+model EquipmentModel {
+  id            String  @id @default(cuid())
+  categoryId    String
+  manufacturer  String?
+  modelNumber   String?
+  description   String?
+  powerRatingKw Float?
+  notes         String?
+
+  category  EquipmentCategory @relation(fields: [categoryId], references: [id])
+  equipment Equipment[]
+}
+
+// The 20 PAYA monthly PM checklists are written per equipment *type*, one level more
+// specific than EquipmentCategory (e.g. category REFRIGERATION contains types
+// Refrigerator & Freezer, Walk-In Cold Room, Blast Chiller & Freezer, Ice Machine).
+// A type is what actually determines which checklist template(s) apply to an asset.
+model EquipmentType {
+  id          String  @id @default(cuid())
+  categoryId  String
+  code        String  @unique // e.g. REFRIGERATOR_FREEZER
+  name        String
+  description String?
+
+  category      EquipmentCategory          @relation(fields: [categoryId], references: [id])
+  equipment     Equipment[]
+  planTemplates MaintenancePlanTemplate[]
+}
+
+model Equipment {
+  id             String    @id @default(cuid())
+  restaurantId   String
+  sectionId      String?
+  categoryId     String
+  modelId        String?
+  typeId         String?
+  name           String
+  assetTag       String    @unique // QR-coded asset id, e.g. PAYA-7F3K9Q
+  serialNumber   String?
+  locationNote   String?
+  installDate    DateTime?
+  warrantyExpiry DateTime?
+  status         String    @default("IN_SERVICE") // IN_SERVICE | OUT_OF_SERVICE | RETIRED
+  riskLevel      String    @default("GREEN") // RED | ORANGE | YELLOW | GREEN — PAYA risk scale (SOP Phase 1 §4.3)
+  customFields   String? // JSON-encoded, kept as text for SQLite/Postgres parity
+  registeredById String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  restaurant   Restaurant         @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  section      RestaurantSection? @relation(fields: [sectionId], references: [id])
+  category     EquipmentCategory  @relation(fields: [categoryId], references: [id])
+  model        EquipmentModel?    @relation(fields: [modelId], references: [id])
+  type         EquipmentType?     @relation(fields: [typeId], references: [id])
+  registeredBy User?              @relation("EquipmentRegisteredBy", fields: [registeredById], references: [id])
+  documents       Document[]
+  workOrders      WorkOrder[]
+  nonConformities NonConformity[]
+}
+
+// ---------- Documents (compliance vault) ----------
+
+model Document {
+  id               String    @id @default(cuid())
+  restaurantId     String
+  equipmentId      String?
+  uploadedByUserId String
+  name             String
+  docType          String // CERTIFICATE | MANUAL | REPORT | OTHER
+  storagePath      String
+  issueDate        DateTime?
+  expiryDate       DateTime?
+  issuingBody      String?
+  notes            String?
+  createdAt        DateTime  @default(now())
+
+  restaurant Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  equipment  Equipment? @relation(fields: [equipmentId], references: [id])
+  uploadedBy User       @relation(fields: [uploadedByUserId], references: [id])
+}
+
+// ---------- Preventive maintenance: checklist templates ----------
+
+// One of PAYA's 20 "PAYA_Monthly_*" checklists, seeded from Docs/PM/*.docx. A template
+// belongs to exactly one EquipmentType — that's how the equipment detail page knows
+// which checklist(s) a technician can open for a given asset.
+model MaintenancePlanTemplate {
+  id              String  @id @default(cuid())
+  code            String  @unique // e.g. PAYA_MONTHLY_01
+  name            String
+  description     String?
+  equipmentTypeId String
+  frequencyType   String  @default("MONTHLY")
+  isActive        Boolean @default(true)
+  sourceFile      String? // original docx filename, for traceability back to Docs/PM
+
+  equipmentType EquipmentType         @relation(fields: [equipmentTypeId], references: [id])
+  tasks         MaintenancePlanTask[]
+  workOrders    WorkOrder[]
+}
+
+// One checklist line, e.g. "Record evaporator coil temperature" (NUMERIC, unit °C).
+model MaintenancePlanTask {
+  id                 String  @id @default(cuid())
+  templateId         String
+  section            String
+  taskOrder          Int
+  description        String
+  expectedResultType String // BOOLEAN | NUMERIC | TEXT | CHOICE
+  unit               String?
+  minValue           Float?
+  maxValue           Float?
+  optionsJson        String? // JSON string array, used when expectedResultType = CHOICE
+  isMandatory        Boolean @default(true)
+
+  template       MaintenancePlanTemplate @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  workOrderTasks WorkOrderTask[]
+}
+
+// ---------- Preventive maintenance: performed visits ----------
+
+// One maintenance visit for one asset — either self-started by an ADMIN/PROJECT_ENGINEER
+// ("quick start") or assigned by one of them to a specific TECHNICIAN, who can only see
+// and complete work explicitly assigned to them (see work-orders.service.ts).
+//
+// Lifecycle: ASSIGNED (created, no task results yet) -> COMPLETED (technician or the
+// assigner submitted the filled checklist) -> optionally edited in place afterward by
+// whoever performed it or by ADMIN/PROJECT_ENGINEER, e.g. to fix a mis-entered value.
+model WorkOrder {
+  id                 String    @id @default(cuid())
+  restaurantId       String
+  equipmentId        String
+  templateId         String?
+  type               String    @default("PREVENTIVE") // PREVENTIVE | CORRECTIVE | INSPECTION
+  status             String    @default("ASSIGNED") // ASSIGNED | IN_PROGRESS | COMPLETED | CANCELLED
+  summary            String?
+  notes              String?
+  performedByUserId  String // who is/was responsible for doing the visit
+  assignedByUserId   String? // who created the assignment; null for a self-started (quick-start) visit
+  assignedAt         DateTime  @default(now())
+  startedAt          DateTime  @default(now())
+  completedAt        DateTime?
+  createdAt          DateTime  @default(now())
+
+  restaurant      Restaurant               @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  equipment       Equipment                @relation(fields: [equipmentId], references: [id], onDelete: Cascade)
+  template        MaintenancePlanTemplate? @relation(fields: [templateId], references: [id])
+  performedBy     User                     @relation("WorkOrderPerformedBy", fields: [performedByUserId], references: [id])
+  assignedBy      User?                    @relation("WorkOrderAssignedBy", fields: [assignedByUserId], references: [id])
+  tasks           WorkOrderTask[]
+  nonConformities NonConformity[]
+}
+
+// One filled-in answer to a MaintenancePlanTask, captured at the moment of the visit
+// (description/unit copied from the template so history reads correctly even if the
+// template is edited later — see the Data-flow_PM.pdf "instantiate on open" pattern).
+model WorkOrderTask {
+  id                 String   @id @default(cuid())
+  workOrderId        String
+  planTaskId         String?
+  section            String
+  taskOrder          Int
+  description        String
+  expectedResultType String
+  unit               String?
+  optionsJson        String?
+  resultBoolean      Boolean?
+  resultNumeric      Float?
+  resultText         String? // selected value for CHOICE tasks; free text for TEXT tasks
+  evidenceNote       String? // the checklist's separate "Evidence or finding" column
+  isNonConformity    Boolean  @default(false)
+
+  workOrder WorkOrder            @relation(fields: [workOrderId], references: [id], onDelete: Cascade)
+  planTask  MaintenancePlanTask? @relation(fields: [planTaskId], references: [id])
+}
+
+// A defect a technician flags while performing maintenance — "Technician can open a
+// defect for that equipment while doing maintenance if there is any." Visible to
+// ADMIN / PROJECT_ENGINEER / CUSTOMER / AUTHORITY via the same tenant-scoped access
+// as the rest of the restaurant's data.
+model NonConformity {
+  id               String    @id @default(cuid())
+  workOrderId      String
+  restaurantId     String
+  equipmentId      String
+  severity         String    @default("MEDIUM") // LOW | MEDIUM | HIGH | CRITICAL
+  description      String
+  recommendation   String?
+  status           String    @default("OPEN") // OPEN | IN_PROGRESS | RESOLVED
+  reportedByUserId String
+  createdAt        DateTime  @default(now())
+  resolvedAt       DateTime?
+
+  workOrder  WorkOrder  @relation(fields: [workOrderId], references: [id], onDelete: Cascade)
+  restaurant Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  equipment  Equipment  @relation(fields: [equipmentId], references: [id], onDelete: Cascade)
+  reportedBy User       @relation("NonConformityReportedBy", fields: [reportedByUserId], references: [id])
+}
+
+// ---------- Audit trail (§2 addition — not in the pilot schema) ----------
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  actorUserId String?
+  action      String // CREATE | UPDATE | DELETE | LOGIN | LOGIN_FAILED | GRANT_ACCESS | REVOKE_ACCESS
+  entityType  String
+  entityId    String?
+  before      String? // JSON-encoded snapshot
+  after       String? // JSON-encoded snapshot
+  createdAt   DateTime @default(now())
+
+  @@index([entityType, entityId])
+  @@index([actorUserId])
+}

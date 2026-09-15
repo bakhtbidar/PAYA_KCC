@@ -1,0 +1,25 @@
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# env
+.env
+.env.local
+apps/api/.env
+apps/web/.env
+
+# prisma / db
+apps/api/prisma/dev.db
+apps/api/prisma/dev.db-journal
+apps/api/uploads/
+
+# logs
+*.log
+npm-debug.log*
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
