@@ -22,7 +22,7 @@ services:
     runtime: node
     plan: free
     branch: main
-    buildCommand: npm install && npm run prisma:generate:production --workspace=apps/api && npm run build --workspace=apps/api
+    buildCommand: npm install --include=dev && npm run prisma:generate:production --workspace=apps/api && npm run build --workspace=apps/api
     # prisma:deploy applies the Postgres migration; prisma:seed (re)creates roles, equipment
     # categories/types, the 20 PM checklist templates, and the one bootstrap admin account —
     # every write in it is an upsert, so running it on every boot is safe and self-healing.
