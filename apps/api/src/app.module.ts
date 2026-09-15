@@ -14,6 +14,7 @@ import { DocumentsModule } from './documents/documents.module';
 import { MaintenancePlansModule } from './maintenance-plans/maintenance-plans.module';
 import { WorkOrdersModule } from './work-orders/work-orders.module';
 import { NonConformitiesModule } from './non-conformities/non-conformities.module';
+import { HealthController } from './health.controller';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { NonConformitiesModule } from './non-conformities/non-conformities.modul
     WorkOrdersModule,
     NonConformitiesModule,
   ],
+  controllers: [HealthController],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })
 export class AppModule {}

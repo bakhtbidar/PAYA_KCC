@@ -27,7 +27,7 @@ services:
     # categories/types, the 20 PM checklist templates, and the one bootstrap admin account —
     # every write in it is an upsert, so running it on every boot is safe and self-healing.
     startCommand: npm run prisma:unstick:production --workspace=apps/api || true; npm run prisma:deploy:production --workspace=apps/api && npm run prisma:seed:production --workspace=apps/api && node apps/api/dist/main.js
-    healthCheckPath: /api/auth/refresh
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
